@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Js App Pay</title>
+</head>
+<body>
+    <div class="container" style="margin: auto">
+        <div class="input-group" id="headerRow">
+            <!-- Navbar content -->
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white" >
+                <div class="container">
+                    <button class="btn btn-outline-primary" type="button" id="buttonService" onclick="searchService()">
+                        Inicio
+                    </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto">
+                          <li class="nav-item dropdown">
+                            <button class="btn btn-outline-success" type="button" id="buttonPayment" onclick="AddNewPayment()">
+                                Añadir nuevo pago
+                            </button>
+                          </li>
+                    </ul>
+                    <form class="d-flex" role="search" style="width: 30%; margin: auto">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwzxyZlRhGWRLVi2mOD50mBdPl7x4rYaPmviLHrJSbGJmBxaSw" class="rounded float-end" style="width: 50%; margin: auto">
+                        <button class="btn btn-outline-warning" type="button" id="buttonSignOff" onclick="buttonSignOff()">
+                            Cerrar Sesión
+                        </button>
+                    </form>
+                  </div>
+                </div>
+              </nav> -->
+        <!-- End Navbar content -->
+        </div>
+        <hr class="my-3">
+        <div class="row" id="resultRow">
+            <div class="mt-5">
+                <div class="card" style="width: 45%; margin: auto">
+                  <div class="card-body">
+                    <h2>Login</h2>
+                    <form method="post" novalidate>
+                      <div class="row">
+                        <div class="col-12 mt-4">
+                          <input type="text" name="username" class="form-control" placeholder="Email"/>
+                        </div>
+                        <div class="col-12 mt-3">
+                          <input type="password" name="password" class="form-control" placeholder="Password"/>
+                        </div>
+                        <div class="col-12 d-grid mt-3">
+                          <button type="submit" class="btn btn-primary" id="buttonLogin" onclick="login()">
+                            Ingresar
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
